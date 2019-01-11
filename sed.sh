@@ -26,3 +26,7 @@ sed '$d' poem.txt #Deleting last line from a particular file
 sed '3,$d' poem.txt #Deleting 3rd to last line
 sed '/tree/d' poem.txt #Deleting lines with matching pattern from a particular file 
 sed '1d;$d' poem.txt #Deleting header and footer (first and last line)
+
+
+head -n -2 myfile.txt # remove the last n lines of a file
+sed '1,42d' test.sql  # remove the first n lines of a file
